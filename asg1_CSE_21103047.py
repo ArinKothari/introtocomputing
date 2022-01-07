@@ -53,10 +53,11 @@ print("\n\nAnswer 5.")
 
 color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 # answer for a, removing element
-color.remove(color[3])
-print(color)
+ans_a = color
+ans_a.remove('Black')
+print(ans_a)
 
-# answer for b, replacing black and pink
-# and since black has been removed
-color[3] = 'Purple'
-print(color)
+# answer for b, replacing black and pink with purple
+ans_b = color
+ans_b[3:4] = ['Purple']
+print(ans_a)
