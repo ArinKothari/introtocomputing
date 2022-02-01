@@ -68,33 +68,31 @@ def input_date():
         print("Not a date! Try Again")
         input_date()
 input_date()
+
 # changing the day
 #for non leap year feb
 if day == 28 and month == 2 and year%4 != 0:
-    newday = 1
+    day = 1
     # changing the month as well
     month = 3
 # checking for leap year
 elif day == 28 and month == 2 and year%4 == 0:
-    newday = day + 1
+    day += 1
 elif day == 29 and month == 2 and year%4 == 0:
-    newday = 1
+    day = 1
     #changing the month aswell
     month = 3
-elif day == 30:
-    # checking for 30 day month
-    if month in mon30:
-        newday = 1
-        # changing the month aswell
-        month = month + 1
-    else:
-        newday = day + 1
+# checking for 30 day month
+elif day == 30 and month in mon30:
+    day = 1
+    # changing the month aswell
+    month += 1
 elif day == 31:
-    newday = 1
-    month = month + 1
+    day = 1
+    month += 1
 else:
     #for all the other days
-    newday = day + 1
+    day += 1
 
 # changing the month and year
 if month == 13:
