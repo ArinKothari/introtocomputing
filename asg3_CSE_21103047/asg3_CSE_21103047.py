@@ -168,14 +168,14 @@ for i in range(6):
 #Answer 6
 print("\n\nAnswer 6.")
 
-sid = input("Enter SID: ")
+sid = int(input("Enter SID: "))
 name = input("Enter Name: ")
 students = {sid:name}
 
 while True:
     option = input("Do you want to enter another student entry(Y or N):").upper()
     if option == 'Y':
-        sid = input("Enter SID: ")
+        sid = int(input("Enter SID: "))
         name = input("Enter Name: ")
         students[sid] = name
     elif option == 'N':
@@ -183,19 +183,16 @@ while True:
     else:
         print('Invalid input!')
 
-#part a.
+#part a. print the dictionary
 print("a.",students)
 
-#part b.
+#part b. sort acc to the names
 print("b.",sorted(students.items(), key= lambda x:x[1]))
 
-#part c.
-sortedlist = []
-for i in sorted(students.keys()):
-    sortedlist.append((i,students[i]))
-print("c.",sortedlist)
+#part c. sort acc to the SIDs
+print("c.",sorted(students.items()))
 
-#part d.
+#part d. search for a student by their SID
 sid = input("Search Name with SID: ")
 print("d.",students[sid])
 
