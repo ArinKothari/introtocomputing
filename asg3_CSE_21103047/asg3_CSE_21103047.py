@@ -193,7 +193,7 @@ print("b.",sorted(students.items(), key= lambda x:x[1]))
 print("c.",sorted(students.items()))
 
 #part d. search for a student by their SID
-sid = input("Search Name with SID: ")
+sid = int(input("Search Name with SID: "))
 print("d.",students[sid])
 
 #____________________________________________________
