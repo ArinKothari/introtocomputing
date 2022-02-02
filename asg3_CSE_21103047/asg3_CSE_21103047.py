@@ -187,10 +187,10 @@ while True:
 print("a.",students)
 
 #part b. sort acc to the names
-print("b.",sorted(students.items(), key= lambda x:x[1]))
+print("b.",{k:v for k,v in sorted(students.items(), key= lambda x:x[1])})
 
 #part c. sort acc to the SIDs
-print("c.",sorted(students.items()))
+print("c.",{k:v for k,v in sorted(students.items())})
 
 #part d. search for a student by their SID
 sid = int(input("Search Name with SID: "))
