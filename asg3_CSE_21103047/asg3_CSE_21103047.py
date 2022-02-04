@@ -100,7 +100,7 @@ if month == 13:
     year += 1
 
 #printing the output
-print(newday,'/',month,'/',year)
+print(day,'/',month,'/',year)
 
 #____________________________________________________
 
