@@ -3,8 +3,8 @@ Type "help", "copyright", "credits" or "license()" for more information.
 
 =============== RESTART: C:\College\Projects\asg3_CSE_21103047.py ==============
 Answer 1.
-Enter a string: I can't eat I can't sleep she's all I think about
-{'I': 3, "can't": 2, 'eat': 1, 'sleep': 1, "she's": 1, 'all': 1, 'think': 1, 'about': 1}
+Enter a string: I can't eat i can't sleep she's all I think about
+{'i': 3, "can't": 2, 'eat': 1, 'sleep': 1, "she's": 1, 'all': 1, 'think': 1, 'about': 1}
 
 
 Answer 2.
