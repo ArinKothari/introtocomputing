@@ -1,7 +1,7 @@
 #Answer 1
 print("Answer 1.")
 
-string = input("Enter a string: ")
+string = input("Enter a string: ").lower()
 
 #convert to list for counting words
 stringlist = string.split()
