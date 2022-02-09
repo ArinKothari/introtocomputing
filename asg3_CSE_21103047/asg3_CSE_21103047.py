@@ -225,7 +225,7 @@ print("The average of the series is ", sum/n)
 print("\n\nAnswer 8.")
 
 set1 = {1, 2, 3, 4, 5}
-set2 = {2, 4, 6, 7}
+set2 = {2, 4, 6, 8}
 set3 = {1, 5, 9, 13, 17}
 
 # part a.
