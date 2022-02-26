@@ -67,6 +67,8 @@ int1, int2 = map(int,input("Enter 2 numbers: ").split())
 quo = int1 // int2
 rem = int1 % int2
 
+print(f"The quotient is {quo} and reminder is {rem}")
+
 #part a
 print("a. The quotient and reminder is a callable value.")
 print(callable(quo))
@@ -81,11 +83,11 @@ if quo != 0 and rem != 0:
     print("b. All the values are non zero")
 
 #part c
-clist = [quo + 4, rem + 4, rem + 5, quo + 5, rem + 5, quo + 6, rem + 6]
+clist = (quo , rem) + (4, 5, 6)
 
 result = []
 for i in range(len(clist)):
-    if clist[i] > 4:
+    if clist[i] < 5:
         result.append(clist[i])
 print(f"c. Filtered out numbers: {result}")
 
@@ -119,7 +121,7 @@ student1 = Student("Arin Kothari", 21103047)
 print("Object created")
 
 #printing the assigned values
-print(f"The name of the student it {student1.name} and SID is {student1.sid}.")
+print(f"The name of the student is {student1.name} and SID is {student1.sid}.")
 
 #deleting object
 del student1
@@ -180,7 +182,7 @@ if count_in_dict(word) != count_in_dict(testword):
 
 #shopkeeper's input to verify the word's meaning
 def userinput():
-    ans = input("\nDoes the word makes sense?(y or n)\n")
+    ans = input("\n{For the Shopkeeper}\nDoes the word makes sense?(y or n)\n").lower()
 
     if ans == 'y':
         print("The friends pass the friendship test!!\n\n")
