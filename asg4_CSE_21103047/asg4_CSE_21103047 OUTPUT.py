@@ -47,9 +47,8 @@ Using loops:
 Answer 3.
 Enter 2 numbers: 56 9
 The quotient is 6 and reminder is 2
-a. The quotient and reminder is a callable value.
-False
-False
+a. The function to analyse quotient and reminder is a callable value.
+True
 b. All the values are non zero
 c. Filtered out numbers: [2, 4]
 d. Set: {2, 4}
