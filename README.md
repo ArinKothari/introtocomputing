@@ -1,3 +1,2 @@
 # introtocomputing
-# assignments regarding computer subject 
-This was made because it was told so in the tutorial.
+assignments regarding 1st semester coursework
